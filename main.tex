@@ -2,7 +2,7 @@
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{float,nidanfloat,enumerate,amsmath,amssymb,booktabs,fancyhdr}
 \bibliographystyle{junsrt}
-\input{layout}
+\input{layout_config}
 
 % define my command
 \def\vector#1{\mbox{\boldmath $#1$}}
@@ -10,7 +10,7 @@
 
 \thispagestyle{fancy}
 \lhead{\gt \small Global Communication 2017\\}
-\rhead{\gt \small 1776xxx Your name \\ 16 June 2017}
+\rhead{\gt \small 大川研究室 1776003 秋庭 裕 \\ 16 June 2017}
 \renewcommand{\headrulewidth}{0pt}
 \cfoot{\thepage}
 
@@ -22,9 +22,14 @@
     {\bf \large Supervised Nonnegative Matrix Factorization for Acoustic Scene Classification}\vspace{.7ex}
 
     \mbox{}
-    {\it Victor Bisot, Romain Serizel, Slim Essid and Gael Richard}
+    {\it Victor Bisot, Romain Serizel, Slim Essid and Gael Richard}\vspace{.7ex}
+
+    \mbox{}
+    {LTCI, CNRS, T\'el\'ecom ParisTech, Universi\'e Paris-Saclay, 75013, Paris, Frace}
   \end{center}
 ]
 
+\input{src/00_abstract.tex}
 \input{src/01_background.tex}
+\input{src/reference.tex}
 \end{document}
