@@ -1,0 +1,30 @@
+\documentclass[uplatex,twocolumn]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{float,nidanfloat,enumerate,amsmath,amssymb,booktabs,fancyhdr}
+\bibliographystyle{junsrt}
+\input{layout}
+
+% define my command
+\def\vector#1{\mbox{\boldmath $#1$}}
+\DeclareMathOperator*{\argmin}{argmin}
+
+\thispagestyle{fancy}
+\lhead{\gt \small Global Communication 2017\\}
+\rhead{\gt \small 1776xxx Your name \\ 16 June 2017}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\thepage}
+
+\begin{document}
+% make a title
+\twocolumn[%
+  \begin{center}
+    {\footnotesize {\it Detection and Classification of Acoustic Scenes and Events 2016 Challenge. September, 2016.}}\\\vspace{.5ex}
+    {\bf \large Supervised Nonnegative Matrix Factorization for Acoustic Scene Classification}\vspace{.7ex}
+
+    \mbox{}
+    {\it Victor Bisot, Romain Serizel, Slim Essid and Gael Richard}
+  \end{center}
+]
+
+\input{src/01_background.tex}
+\end{document}
